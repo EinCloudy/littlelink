@@ -1,0 +1,73 @@
+:root {
+    --bg-color: #1a1a1a;
+    --container-bg: #2c2c2c;
+    --text-color: #f4f4f4;
+    --header-color: #4a69bd;
+    --subheader-color: #6a89cc;
+    --info-block-bg: #3c3c3c;
+    --link-color: #74b9ff;
+    --button-bg: #4a69bd;
+    --button-color: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 60px auto 0;
+    background-color: var(--container-bg);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+h1 {
+    color: var(--header-color);
+    border-bottom: 2px solid var(--subheader-color);
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: var(--subheader-color);
+    margin-top: 30px;
+}
+
+.info-block {
+    background-color: var(--info-block-bg);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: var(--button-bg);
+    color: var(--button-color);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #2980b9;
+    text-decoration: none;
+}
